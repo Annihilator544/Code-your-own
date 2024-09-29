@@ -1,0 +1,19 @@
+{
+  "name": "jsx-renderer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "transpiler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel index.js -o dist.js",
+    "start": "npm run build && node dist.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.25.6",
+    "@babel/core": "^7.25.2",
+    "@babel/plugin-transform-react-jsx": "^7.25.2",
+    "@babel/preset-env": "^7.25.4"
+  }
+}

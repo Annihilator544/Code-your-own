@@ -2,6 +2,7 @@
 
 // ^^^^ this tells a transpiler to inject calls to an `h()` function for each node.
 function h(nodeName, attributes, ...args){
+    console.log('h()', nodeName, attributes, args);
     let children = args.length ? [].concat(...args) : null;
     return { nodeName, attributes, children };
 }
